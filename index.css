@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+header{
+  height: 29vh;
+  padding: 7%;
+  background-color: #F7F9FF;
+  border-radius: 0px 0px 20px 20px;
+}
+
+header h2{
+  margin-bottom: 2%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1D1F29;
+}
+
+header h6{
+  margin-bottom: 10%;
+  font-size: 14px;
+  line-height: 15px;
+  color: #63687D;
+}
+
+hr{
+  height: 1px;
+  margin-bottom: 5%;
+  border: none;
+  background-color: #848BAB;
+}
+
+/*Section -> Media*/
+
+.media{
+  width: 87%;
+  margin: 0 auto;
+  margin-top: -15%;
+}
+
+.informations{
+  height: 28vh;
+  padding: 15%;
+  margin-bottom: 7%;
+  border-top: 4px solid #178FF5; 
+  border-radius: 5px;
+  background-color: #F1F3FA;
+  text-align: center;
+}
+
+.informations-social-media{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media{
+  width: 20%;
+}
