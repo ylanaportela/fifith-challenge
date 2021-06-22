@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+header{
+  height: 29vh;
+  padding: 7%;
+  background-color: #F7F9FF;
+  border-radius: 0px 0px 20px 20px;
+}
+
+header h2{
+  margin-bottom: 2%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1D1F29;
+}
+
+header h6{
+  margin-bottom: 10%;
+  font-size: 14px;
+  line-height: 15px;
+  color: #63687D;
+}
+
+hr{
+  height: 1px;
+  margin-bottom: 5%;
+  border: none;
+  background-color: #848BAB;
+}
+
+.dark-mode{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dark-mode div:first-child{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #63687D;
+}
+
+/*Slider range*/
+
+.switch{
+  width: 48px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.switch input{
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #AEB3CB;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slider::before{
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 3px;
+  left: 25px;
+  background-color: #F1F3FA;
+  border-radius: 100%;
+}
+
+input:checked + .slider{
+  background-image: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
+}
+
+
+input:checked + .slider:before {
+  transform: translateX(-20px);
+  background-color: #333A55;
+}
+
+/*Section -> Media*/
+
+.media{
+  width: 87%;
+  margin: 0 auto;
+  margin-top: -5vh;
+}
+
+.informations{
+  height: 28vh;
+  padding: 8%;
+  margin-bottom: 7%;
+  border-radius: 5px;
+  background-color: #F1F3FA;
+  text-align: center;
+}
+
+.media-facebook{
+  border-top: 4px solid #178FF5; 
+}
+
+.media-twitter{
+  border-top: 4px solid #1DA1F2; 
+}
+
+.media-instagram .border{
+  width: 87%;
+  height: 4px;
+  background-image: linear-gradient(225deg ,#DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+  position: absolute;
+  right: 6.5vw;
+  bottom: 13.5vh;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 5px;
+}
+
+.media-youtube{
+  border-top: 4px solid #C4032B;
+}
+
+.informations-social-media{
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informations-social-media > .social-media{
+  margin-bottom: 0px;
+}
+
+.social-media{
+  margin-left: 10px;
+  margin-bottom: 10%;
+}
+
+.social-media.logo{
+  height: 20px;
+}
+
+.social-media.username{
+  font-size: 12px;
+  font-weight: bold;
+  color: #63687D;
+  display: flex;
+  align-items: center;
+}
+
+.informations-followers .number{
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 3%;
+}
+
+.followers{
+  margin-bottom: 3vh;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: #63687D;
+}
+
+.information-currently{
+  font-size: 12px;
+  color:  #1EB589;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-currently img{
+  margin-right: 6px;
+}
+
+.icon-down{
+  color: #DC414C;
+}
+
+/*Section -> Overview*/
+
+.overview{
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 8%;
+  padding-bottom: 5vh;
+}
+
+.overview h3{
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #63687D;
+  margin-bottom: 5%;
+}
+
+.description{
+  width: 100%;
+  height: 18vh;
+  margin-top: 10%;
+  padding: 7%;
+  border-radius: 5px;
+  background-color: #F1F3FA;
+}
+
+.description-action-media{
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8%;
+}
+
+.description-action{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #63687D;
+}
+
+.description-media{
+  max-height: 20px;
+}
+
+.description-today{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.percentage{
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+}
+
+.percentage.superavit{
+  color: #1EB589;
+}
+
+.percentage.defict{
+  color: #DC414C;
+}
+
+.percentage img{
+  vertical-align: middle;
+  margin-right: 3px;
+}
