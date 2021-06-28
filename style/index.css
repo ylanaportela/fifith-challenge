@@ -1,9 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+:root{
+  --font-color-title-light: #1D1F29;
+  --font-color-text-light: #63687D;
+  --bg-color-hover-light: #E1E4F0;
+  --bg-color-box-dark: #252B42; 
+  --font-color-title-dark: #FFFFFF;  
+  --font-color-text-dark: #8C98C6;
+  --bg-color-box-hover-dark: #333A55;
+}
+
 *{
   margin: 0;
   font-family: 'Inter', sans-serif;
   box-sizing: border-box;
+}
+
+.title{
+  color: var(--font-color-title-light);
+}
+
+.title.dark-mode{
+  color: var(--font-color-title-dark);
+}
+
+.text{
+  color: var(--font-color-text-light);
+}
+
+.text.dark-mode{
+  color: var(--font-color-text-dark);
 }
 
 header{
@@ -18,14 +44,12 @@ header h2{
   font-size: 24px;
   font-weight: 700;
   line-height: 20px;
-  color: #1D1F29;
 }
 
 header h6{
   margin-bottom: 10%;
   font-size: 14px;
   line-height: 15px;
-  color: #63687D;
 }
 
 hr{
@@ -44,7 +68,6 @@ hr{
   font-size: 14px;
   line-height: 17px;
   font-weight: bold;
-  color: #63687D;
 }
 
 /*Slider range*/
@@ -111,6 +134,19 @@ input:checked + .slider:before {
   text-align: center;
 }
 
+.informations:hover, .description:hover{
+  cursor: pointer;
+  background-color: var(--bg-color-hover-light);
+}
+
+.informations.dark-mode{
+  background-color: var(--bg-color-box-dark);
+}
+
+.informations.dark-mode:hover, .description.dark-mode:hover{
+  background-color: var(--bg-color-box-hover-dark);
+}
+
 .media-facebook{
   border-top: 4px solid #178FF5; 
 }
@@ -157,7 +193,6 @@ input:checked + .slider:before {
 .social-media.username{
   font-size: 12px;
   font-weight: bold;
-  color: #63687D;
   display: flex;
   align-items: center;
 }
@@ -174,7 +209,6 @@ input:checked + .slider:before {
   font-size: 12px;
   line-height: 15px;
   letter-spacing: 5px;
-  color: #63687D;
 }
 
 .information-currently{
@@ -206,7 +240,6 @@ input:checked + .slider:before {
   font-size: 24px;
   line-height: 29px;
   font-weight: 700;
-  color: #63687D;
   margin-bottom: 5%;
 }
 
@@ -217,6 +250,10 @@ input:checked + .slider:before {
   padding: 7%;
   border-radius: 5px;
   background-color: #F1F3FA;
+}
+
+.description.dark-mode{
+  background-color: var(--bg-color-box-dark);
 }
 
 .description-action-media{
@@ -231,7 +268,6 @@ input:checked + .slider:before {
   font-size: 14px;
   line-height: 17px;
   font-weight: bold;
-  color: #63687D;
 }
 
 .description-media{

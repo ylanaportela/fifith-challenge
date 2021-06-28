@@ -1,0 +1,21 @@
+@media (min-device-width: 1024px){
+
+  header{
+    padding: 3%;
+  }
+
+  hr{
+    margin-top: -6%;
+    margin-bottom: 2%;
+  }
+
+  .informations{
+    height: 35vh;
+    padding: 2%;
+  }
+
+  .media-instagram .border{
+    
+    bottom: 3vh;
+  }
+}

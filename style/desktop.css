@@ -1,0 +1,54 @@
+@media (min-width: 1300px){
+
+  header{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .dark-mode{
+    width: 10vw;
+  }
+
+  .media{
+    display: flex;
+    margin-top: -13vh;
+    justify-content: space-between;
+  }
+
+  .informations{
+    width: 18vw;
+    height: 27vh;
+  }
+
+  .media-instagram .border{
+    width: 18vw;
+    position: relative;
+    right: 12%;
+  }
+
+  .overview{
+    margin-top: -2%;
+  }
+
+  .overview h3{
+    margin-bottom: 0;
+  }
+
+  .overview-description{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description{
+    width: 20vw;
+    height: 16vh;
+    padding: 2%;
+    margin-top: 2%;
+  }
+
+}
